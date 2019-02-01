@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GK_CFT_Test</string>
+    <string name="rotate">Rotate</string>
+    <string name="invert">Invert</string>
+    <string name="mirror">Mirror</string>
+    <string name="tap_here_to_add_new_image">Tap here to add new Image</string>
+</resources>
