@@ -3,6 +3,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
+        android:id="@+id/mainActivityRootView"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
@@ -16,9 +17,7 @@
                  android:layout_marginBottom="8dp"
                  app:layout_constraintBottom_toTopOf="@+id/guideline"
                  android:layout_marginTop="8dp"
-                 app:layout_constraintTop_toTopOf="parent">
-        <include layout="@layout/image_editing_panel"/>
-    </FrameLayout>
+                 app:layout_constraintTop_toTopOf="parent"/>
 
     <FrameLayout android:id="@+id/list"
                  android:layout_width="0dp"
@@ -30,9 +29,7 @@
                  android:layout_marginBottom="8dp"
                  app:layout_constraintBottom_toBottomOf="parent"
                  android:layout_marginTop="8dp"
-                 app:layout_constraintTop_toTopOf="@+id/guideline">
-        <include layout="@layout/images_history_panel"/>
-    </FrameLayout>
+                 app:layout_constraintTop_toTopOf="@+id/guideline"/>
 
     <androidx.constraintlayout.widget.Guideline
             android:layout_width="wrap_content"
