@@ -17,7 +17,6 @@ class EditingHistoryFragment : MviFragment<EditingHistoryView, EditingHistoryPre
 
     override fun render(viewState: EditingHistoryViewState) {
 
-
     }
 
 
