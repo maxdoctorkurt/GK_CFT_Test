@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import com.example.maxdo.gk_cft_test.R
+import com.example.maxdo.gk_cft_test.core.mvi.CustomRxBindings
 import com.hannesdorfmann.mosby3.mvi.MviFragment
 import com.karumi.dexter.Dexter
 import com.karumi.dexter.MultiplePermissionsReport
@@ -42,19 +43,19 @@ class EditingImageFragment : MviFragment<EditingImageView, EditingImagePresenter
     }
 
     override fun getRotateImageIntent(): Observable<Boolean> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return CustomRxBindings.viewClicks(btn_rotate).map { true }
     }
 
     override fun getInvertImageIntent(): Observable<Boolean> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return CustomRxBindings.viewClicks(btn_invert).map { true }
     }
 
     override fun getMirrorImageIntent(): Observable<Boolean> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return CustomRxBindings.viewClicks(btn_mirror).map { true }
     }
 
     override fun getGreyScaleImageIntent(): Observable<Boolean> {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        return CustomRxBindings.viewClicks(btn_greyscale).map { true }
     }
 
     override fun render(viewState: EditingImageViewState) {
