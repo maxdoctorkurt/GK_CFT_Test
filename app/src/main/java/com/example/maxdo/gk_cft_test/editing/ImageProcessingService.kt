@@ -8,11 +8,9 @@ import io.reactivex.Observable
 import io.reactivex.schedulers.Schedulers
 import io.reactivex.subjects.PublishSubject
 import android.graphics.BitmapFactory
-import android.graphics.Bitmap
-import android.graphics.Matrix
 import android.net.Uri
 import androidx.exifinterface.media.ExifInterface
-import com.example.maxdo.gk_cft_test.core.rotateBitmap
+import com.example.maxdo.gk_cft_test.core.utils.rotateBitmap
 import java.io.File
 
 
@@ -37,6 +35,9 @@ class ImageProcessingService : Service() {
 
             if (imageFullPath != null)
                 subject.onNext(ImageProcessingRequest(imageFullPath, operation, this))
+
+
+
 
 
         }
